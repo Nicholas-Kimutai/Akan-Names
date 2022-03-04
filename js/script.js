@@ -18,3 +18,6 @@ var male = [
         {day:"Saturday",akanName:"Ama"}
     ];
     
+    function dayOfWeek(){
+        
+    };
