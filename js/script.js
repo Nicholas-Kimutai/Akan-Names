@@ -22,4 +22,12 @@ var male = [
         var dd = parseInt(document.getElementById("dd").value);
         var mm = parseInt(document.getElementById("mm").value);
         var yy = document.getElementById("yy").value;
+
+        var cc = parseInt(year.slice(0,2)); // century digit
+        var yy = parseInt(year.slice(2,4)); // year digit
+
+        if(dd <= 0 || dd > 31) alert("You have entered an invalid day");
+        if(mm <= 0 || mm > 12) alert("You have entered an invalid month");
+   
+
     };
