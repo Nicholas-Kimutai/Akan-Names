@@ -59,4 +59,5 @@ var male = [
         else{
             alert("Invalid inputs");
         }
+        document.getElementById("userDetails").reset();
     }
