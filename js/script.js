@@ -19,5 +19,7 @@ var male = [
     ];
     
     function dayOfWeek(){
-        
+        var dd = parseInt(document.getElementById("dd").value);
+        var mm = parseInt(document.getElementById("mm").value);
+        var yy = document.getElementById("yy").value;
     };
