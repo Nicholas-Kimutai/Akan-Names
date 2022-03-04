@@ -29,7 +29,16 @@ var male = [
         if(dd <= 0 || dd > 31) alert("You have entered an invalid day");
         if(mm <= 0 || mm > 12) alert("You have entered an invalid month");
 
-        var day =  ( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd ) % 7;;
+        var day = (((cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd) % 7;
         return Math.floor(day);
    
     };
+
+    function showResults(){
+        var gender = document.querySelector('input[name="gridRadios"]:checked');
+        if(gender === null){
+            alert("Please select your gender");
+        }
+        else{
+            gender=gender.value;
+        }
