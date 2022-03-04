@@ -42,3 +42,21 @@ var male = [
         else{
             gender=gender.value;
         }
+        var d = dayOfWeek();
+
+        var femaleName = female[d].akanName;
+        var maleName = male[d].akanName;
+        var dayName = male[d].day;
+
+        if(gender === "Female"){
+            document.querySelector("#akanName").innerHTML = "Your Akan Name is : " + femaleName;
+            document.querySelector("#day").innerHTML = "You were born on a : " + dayName;
+        }
+        else if(gender==="Male"){
+            document.querySelector("#akanName").innerHTML = "Your Akan Name is : " + maleName;
+            document.querySelector("#day").innerHTML = "You were born on a : " + dayName;
+        }
+        else{
+            alert("Invalid inputs");
+        }
+    }
