@@ -8,3 +8,13 @@ var male = [
     {day:"Saturday",akanName:"Kwame"}
      ];
 
+     var female = [
+        {day:"Sunday",akanName:"Akosua"},
+        {day:"Monday",akanName:"Adwoa"},
+        {day:"Tuesday",akanName:"Abenaa"},
+        {day:"Wednesday",akanName:"Akua"},
+        {day:"Thursday",akanName:"Yaa"},
+        {day:"Friday",akanName:"Afua"},
+        {day:"Saturday",akanName:"Ama"}
+    ];
+    
