@@ -71,8 +71,8 @@ var female = [
             document.getElementById("dayWeek").innerHTML = "You were born on a : " + dayName;
         }
         else if(gender==="Male"){
-            document.getElementById("akanNm").innerHTML = "Your Akan Name is: " + maleName;
-            document.getElementById("dayWeek").innerHTML = "You were born on a : " + dayName;
+            document.getElementById("akanNm").innerHTML = "Your Akan Name is " + maleName;
+            document.getElementById("dayWeek").innerHTML = "You were born on a " + dayName;
         }
         else{
             alert("Invalid inputs");
