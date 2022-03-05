@@ -35,7 +35,7 @@ var female = [
         }
 
 
-        if(dd===null){
+        if(dd===0){
             alert("Please enter the date of birth");
         }
 
@@ -65,7 +65,7 @@ var female = [
         var femaleName = female[d].akanName;
         var maleName = male[d].akanName;
         var dayName = male[d].day;
-
+        
         if(gender === "Female"){
             document.getElementById("akanNm").innerHTML = "Your Akan Name is : " + femaleName;
             document.getElementById("dayWeek").innerHTML = "You were born on a : " + dayName;
