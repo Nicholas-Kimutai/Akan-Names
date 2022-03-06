@@ -34,19 +34,6 @@ var female = [
             alert("You have entered an invalid month");
         }
 
-
-        if(dd===0){
-            alert("Please enter the date of birth");
-        }
-
-        if(mm===null){
-            alert("Please enter the month of birth");
-        }
-
-        if(dd===null){
-            alert("Please enter the date year of birth");
-        }
-
         var day = (((cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd) % 7;;
         return Math.floor(day);
    
