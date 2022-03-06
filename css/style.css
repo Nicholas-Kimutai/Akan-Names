@@ -3,7 +3,7 @@ html{
 
 }
 body{
-    background-image: url("/Images/africanBaby.jpg");
+    background-image: url("../Images/africanBaby.jpg");
     background-repeat: no-repeat;
     background-position: right;
     background-size:cover;
