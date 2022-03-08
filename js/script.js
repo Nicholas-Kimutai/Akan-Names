@@ -20,19 +20,23 @@ var female = [
     
     function dayOfWeek(){
         var dd = parseInt(document.getElementById("dd").value);
-        var mm = parseInt(document.getElementById("mm").value);
-        var year = document.getElementById("yy").value;
-         
-        var cc=parseInt(year.slice(0,2));
-        var yy=parseInt(year.slice(2,4));
-        
-
         if(dd <= 0 || dd > 31) {
             alert("You have entered an invalid day");
         }
+
+        var mm = parseInt(document.getElementById("mm").value);
         if(mm <= 0 || mm > 12){
             alert("You have entered an invalid month");
         }
+
+        var year = document.getElementById("yy").value;
+        if (year>2022){
+            alert("Your have entered invalid year");
+        }
+        else if(year<=2000){dd-=1}
+         
+        var cc=parseInt(year.slice(0,2));
+        var yy=parseInt(year.slice(2,4));
 
         var day = (((cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd) % 7;;
         return Math.floor(day);
