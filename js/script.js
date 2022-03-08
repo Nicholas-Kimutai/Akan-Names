@@ -38,8 +38,12 @@ var female = [
         var cc=parseInt(year.slice(0,2));
         var yy=parseInt(year.slice(2,4));
 
-        var day = (((cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd) % 7;;
-        return Math.floor(day);
+
+        if(!(dd <= 0 || dd > 31)&& !(mm <= 0 || mm > 12)&& !(year>2022)){
+        var day = Math.floor((((cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd) % 7);
+        return day;
+        }
+    
    
     };
 
@@ -51,6 +55,7 @@ var female = [
         else{
             gender=gender.value;
         }
+
         var d = dayOfWeek();
 
         var femaleName = female[d].akanName;
@@ -65,8 +70,6 @@ var female = [
             document.getElementById("akanNm").innerHTML = "Your Akan Name is " + maleName;
             document.getElementById("dayWeek").innerHTML = "You were born on a " + dayName;
         }
-        else{
-            alert("Invalid inputs");
-        }
-        document.getElementById("userDetails").reset();
+        
+        // document.getElementById("userDetails").reset();
     }
